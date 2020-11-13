@@ -140,7 +140,62 @@ input
     .jaZGFx b {
         font-size: 14px;
     }
-footer
+.img1 {
+    background: #f6f7f8;
+    background: linear-gradient(to right,#eeeeee 8%,#dddddd 18%,#eeeeee 33%);
+    background-size: 1000px 104px;
+    height: 200px;
+    width: 192px;
+    position: relative;
+    padding: 12px;
+    overflow: hidden;
+    border: 12px solid #fff;
+}
+footer {
+    background-color: #ffff;
+    border-top: 10px solid #f4f4f4;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12px;
+}
+.footer-item {
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+.footer-ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: column;
+}
+.footer-li {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.29;
+    padding: 0;
+    margin-bottom: 12px;
+}
+.footer-heading
 {
-
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #15181f;
+    text-transform: uppercase;
 }
