@@ -3,17 +3,17 @@
   Link
 } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css'
-
 function Header() {
   return (
     	<header>
                 <div className="topnav">
-                    <NavLink to="#" activeClassName="logo">LOGO</NavLink>
-		            <NavLink to="#" activeClassName="items">Profile</NavLink>
-                    <NavLink to="#" activeClassName="items">Thông báo</NavLink>
-                    <NavLink to="#" activeClassName="items">Chat</NavLink>
-                    <NavLink to="#" activeClassName="items">Tôi bán</NavLink>
-                    <NavLink to="#" activeClassName="items">Trang chủ</NavLink>
+                      <NavLink className="items" to="/Footer">LOGO</NavLink>
+                      <NavLink className="items" to="/Footer">Profile</NavLink>
+                      <NavLink className="items" to="/Footer">Thông báo</NavLink>
+                      <NavLink className="items" to="/Footer">Chat</NavLink>
+                      <NavLink className="items" to="/Footer">Tôi bán</NavLink>
+                      <NavLink className="items" to="/Footer">Danh sách</NavLink>
+                      <NavLink className="items" to="/Footer">Trang chủ</NavLink>
                 </div>
                 <div className="topnav">
                     <div>

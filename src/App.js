@@ -10,6 +10,7 @@ import Header from './headerComponents/header';
 import Footer from './footerComponents/footer';
 import HomePage from './pages/homePage';
 import SlideShow from './pages/slideShow';
+import Products from './pages/products';
 import './assets/default.css'
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
               <Header/>
               <SlideShow/>
               <HomePage/>
-              <Footer/>
+              <Footer />
+              <Route exact path='/Products' component={Products}/>
     </div>
     </Router>
   );

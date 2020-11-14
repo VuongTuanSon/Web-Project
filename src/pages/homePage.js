@@ -31,7 +31,7 @@ function homePage() {
     return (
         <div className="ekvnxp" >
             <div className="ergipz">
-                <h1 className="eBxpbB">Những nhà được xem nhiều nhất</h1>
+                <h1 className="eBxpbB">Những phòng trọ được xem nhiều nhất</h1>
                 <div className="hot-pics">
                     <NavLink to="#" activeClassName="">
                         <img src={hot1} className="img1" />
@@ -46,45 +46,52 @@ function homePage() {
                         <img src={hot4} className="img1" />
                     </NavLink>
                 </div>
-                <h1 className="eBxpbB">Danh sách các phòng trọ hiện có</h1>
+                <h1 className="eBxpbB">Danh sách các phòng trọ mới thêm</h1>
                 <Carousel className="hot-pics" responsive={responsive}>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                 </Carousel>
                 <Carousel className="hot-pics" responsive={responsive}>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
+                        <p className="desc1">Nhà tại HCM</p>
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
                     </NavLink>
                     <NavLink to="#" activeClassName="">
-                        <img src={hot4} className="img1" />
+                        <img src={hot4} className="img2" />
                     </NavLink>
                 </Carousel>
             </div>
