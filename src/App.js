@@ -17,11 +17,11 @@ function App() {
   return (
     <Router>
     <div className="App">
-              <Header/>
-              <SlideShow/>
-              <HomePage/>
+              <Header />
+              <Route exact path='/' component={SlideShow} />
+              <Route exact path='/' component={HomePage} />
+              <Route exact path='/Products' component={Products} />
               <Footer />
-              <Route exact path='/Products' component={Products}/>
     </div>
     </Router>
   );

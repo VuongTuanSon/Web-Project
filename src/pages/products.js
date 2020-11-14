@@ -3,8 +3,7 @@ import Footer from '../footerComponents/footer';
 function Products() {
   return (
       <div className="wrap">
-          <Header />
-          <Footer />
+         content
     	</div>
     	
   );

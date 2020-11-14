@@ -7,7 +7,7 @@ function Header() {
   return (
     	<header>
                 <div className="topnav">
-                      <NavLink className="items" to="/Footer">LOGO</NavLink>
+                      <NavLink className="logo" to="/Footer">LOGO</NavLink>
                       <NavLink className="items" to="/Footer">Profile</NavLink>
                       <NavLink className="items" to="/Footer">Thông báo</NavLink>
                       <NavLink className="items" to="/Footer">Chat</NavLink>
