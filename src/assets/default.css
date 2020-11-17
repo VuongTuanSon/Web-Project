@@ -74,15 +74,12 @@ input
     padding: 12px 0 0 0;
 }
 .eBxpbB {
-    font-size: 17px;
+    font-size: 25px;
     margin: 0 0 12px 12px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.41;
-    -webkit-letter-spacing: normal;
-    -moz-letter-spacing: normal;
-    -ms-letter-spacing: normal;
     letter-spacing: normal;
     color: #222222;
 }
@@ -113,7 +110,6 @@ input
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-text-decoration: none;
     text-decoration: none;
     height: 100%;
     padding: 15px 0;
@@ -216,4 +212,54 @@ footer {
     letter-spacing: normal;
     color: #15181f;
     text-transform: uppercase;
+}
+.wrap-list 
+{
+    display:flex;
+    padding-bottom:30px;
+}
+.wrap-list-img
+{   
+    padding : 0px 10px 10px 13px;
+    width:200px;
+    height:150px;
+}
+.wrap-list-body{
+    display:inline;
+}
+.wrap-list-content {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 15px;
+    max-height: 35px;
+    margin:0;
+}
+.wrap-list-content-lowerhalf
+{
+    padding-top:40px;
+}
+.wrap-list-price {
+    color: red;
+    font-size: 14px;
+    font-family: Verdana,Arial,sans-serif;
+}
+.adListingInfo{
+    padding-top:60px;
+}
+.adItems
+{
+    padding-right:20px;
+}
+.productLists {
+    position : relative;
+    overflow: hidden;
+    left:350px;
+}
+.listItems {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }

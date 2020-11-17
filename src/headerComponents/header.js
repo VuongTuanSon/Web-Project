@@ -12,7 +12,7 @@ function Header() {
                       <NavLink className="items" to="/Footer">Thông báo</NavLink>
                       <NavLink className="items" to="/Footer">Chat</NavLink>
                       <NavLink className="items" to="/Footer">Tôi bán</NavLink>
-                      <NavLink className="items" to="/Footer">Danh sách</NavLink>
+                      <NavLink className="items" to="/Products">Danh sách</NavLink>
                       <NavLink className="items" to="/Footer">Trang chủ</NavLink>
                 </div>
                 <div className="topnav">
