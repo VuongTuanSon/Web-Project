@@ -263,3 +263,101 @@ footer {
     padding: 16px;
     text-decoration: none;
 }
+.accessRow {
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.accessRowItemsRight {
+    float: right;
+    outline: none;
+    display: inline-block;
+    border: 0;
+    padding-top:10px;
+}
+.accessRowItemsRightIn {
+    float: right;
+    padding-top:10px;
+    padding-right:30px;
+}
+ol
+{
+    padding-left:11px;
+}
+.divider::before
+{ 
+    content:">>";
+}
+.clearList li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right:5px;
+}
+.container
+{
+    display:flex;
+}
+.col1
+{
+    padding-left:10px;
+    width:66.67%;
+}
+.col2
+{
+    padding-left:10px;
+}
+.item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    background-color:grey;
+}
+.detailed-price {
+    color: red;
+    font-size: 15px;
+    font-family: Verdana,Arial,sans-serif;
+}
+.item-title {
+    margin: 3 3 0 0;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: #222222;
+}
+.item-location
+{
+    padding-top:10px;
+}
+.item-description
+{
+    padding-top:15px;
+    padding-bottom:20px;
+}
+.item-area
+{
+    padding-bottom:10px;
+}
+.phoneSeller
+{
+    color : orangered;
+    padding-bottom:10px;
+}
+.chat-item
+{
+    font-size:18px;
+    color:cornflowerblue;
+}
+.contact-help {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    font-style: italic;
+}
+.contact-cskh
+{
+    color:blue;
+}

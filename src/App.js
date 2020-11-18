@@ -11,6 +11,7 @@ import Footer from './footerComponents/footer';
 import HomePage from './pages/homePage';
 import SlideShow from './pages/slideShow';
 import Products from './pages/products';
+import DetailedItems from './pages/detailedItems'
 import './assets/default.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route exact path='/' component={SlideShow} />
               <Route exact path='/' component={HomePage} />
               <Route exact path='/Products' component={Products} />
+              <Route exact path='/DetailedItems' component={DetailedItems} />
               <Footer />
     </div>
     </Router>
