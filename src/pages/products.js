@@ -2,7 +2,7 @@
     NavLink,
     Link
 } from 'react-router-dom';
-import list1 from './images/list-item1.jpg'
+import   from './images/list-item1.jpg'
 function Products() {
   return (
       <div className="ekvnxp">
