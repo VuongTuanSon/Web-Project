@@ -4,8 +4,9 @@ import {
     Link
 } from 'react-router-dom';
 import {Slide} from 'react-slideshow-image';
-
+import avatar1 from './images/avatar1.png'
 import item1 from './images/item1.jpg'
+import heart from './images/heart.png'
 function DetailedItems() {
     return (
         <div className="ekvnxp">
@@ -36,7 +37,14 @@ function DetailedItems() {
                         </div>
                     </Slide>
                     <div>
-                        <h2 className="item-title">Phòng khép kín tầng 2</h2>
+                        <div className="separator2">
+                            <h2 className="item-title">Phòng khép kín tầng 2</h2>
+                            <span className="heart-button">
+                                <button>
+                                    <img src={heart} width="20" />
+                                </button>
+                            </span>
+                        </div>
                         <span className="detailed-price">2.6 triệu</span>
                         <div className="item-location">Cát Linh, Đống Đa, Hà Nội</div>
                         <div className="item-description">Tầng 2 phòng khép kín điện nước an ninh tốt thoáng thuận tiện ngần đường chính</div>
@@ -48,9 +56,31 @@ function DetailedItems() {
                     <div className="contact-help">
                         Tin đăng này đã được kiểm duyệt. Nếu có vấn đề gì vui lòng <NavLink className="contact-cskh" to="">liên lạc</NavLink> với bộ phận CSKH.
                     </div>
+                    <div className="center-report">
+                        <button type="button">Báo tin không hợp lệ</button>
+                        <button type="button">Báo tin đã bán</button>
+                    </div>
                 </div>
                 <div className="col2">
-                    ABCXYZ
+                    <NavLink to="/ProfilePage" className="">
+                        <div className="avatar-image">
+                            <img className="ava-pic" src={avatar1} width="50" height="50" />
+                        </div>
+                        <span className="seller-name">Vương Tuấn Sơn</span>
+                    </NavLink>
+                    <div className="separator">
+                        <div className="call-box">
+                            Điện thoại liên lạc : 0972759616
+                        </div>
+                    </div>
+                    <div className="separator">
+                        <NavLink className="chat-link-box" to="">
+                            Bấm để chat với người bán
+                        </NavLink>
+                    </div>
+                    <div className="separator">
+                        <span className="contact-help">Lưu ý : KHÔNG NÊN đặt cọc nếu chưa xác định chủ nhà.</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -61,7 +61,7 @@ input
 
 .ekvnxp {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 936px;
 }
 
 @media (max-width: 540px) {
@@ -75,7 +75,7 @@ input
 }
 .eBxpbB {
     font-size: 25px;
-    margin: 0 0 12px 12px;
+    margin: 0 0 12px 0px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -147,9 +147,9 @@ input
     height: 200px;
     width: 192px;
     position: relative;
-    padding: 12px;
+    padding: 10px; 
     overflow: hidden;
-    border: 12px solid #fff;
+    border: 11px solid #fff;
 }
 .img2 {
     background: #f6f7f8;
@@ -158,7 +158,7 @@ input
     height: 200px;
     width: 192px;
     position: relative;
-    padding: 12px;
+    padding: 10px;
     overflow: hidden;
 }
 .desc1
@@ -215,12 +215,13 @@ footer {
 }
 .wrap-list 
 {
+    padding-top:10px;
     display:flex;
-    padding-bottom:30px;
+    padding-bottom:15px;
 }
 .wrap-list-img
 {   
-    padding : 0px 10px 10px 13px;
+    padding : 0px 10px 10px 0px;
     width:200px;
     height:150px;
 }
@@ -264,7 +265,6 @@ footer {
     text-decoration: none;
 }
 .accessRow {
-    margin-bottom: 10px;
     overflow: auto;
 }
 .accessRowItemsRight {
@@ -281,7 +281,7 @@ footer {
 }
 ol
 {
-    padding-left:11px;
+    padding-left:0px;
 }
 .divider::before
 { 
@@ -298,12 +298,12 @@ ol
 }
 .col1
 {
-    padding-left:10px;
     width:66.67%;
 }
 .col2
 {
-    padding-left:10px;
+    padding-left:30px;
+    width:33.33%;
 }
 .item-img {
     display: flex;
@@ -320,6 +320,7 @@ ol
     font-family: Verdana,Arial,sans-serif;
 }
 .item-title {
+    display:inline;
     margin: 3 3 0 0;
     font-weight: bold;
     font-stretch: normal;
@@ -353,11 +354,124 @@ ol
 }
 .contact-help {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 15px;
     font-style: italic;
 }
 .contact-cskh
 {
     color:blue;
+}
+.avatar-image {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    background-color: white;
+    position: relative;
+    background-position: center;
+    padding-right:10px;
+}
+.ava-pic {
+    border-radius: 50%;
+}
+.seller-name {
+    font-weight:700;
+    font-size:18px;
+    line-height:10px;
+}
+.call-box {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 15px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    user-select: none;
+    font-size: 13px;
+    -webkit-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+    color: #fff;
+    background-color: #33a837;
+}
+.chat-link-box {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 8px 10px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #3c763d;
+    background-color: #fff;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: background-color 200ms ease-in-out;
+}
+.separator
+{
+    padding-top:20px;
+}
+.separator2
+{
+    padding-top:10px
+}
+.center-report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:20px;
+}
+.avatar-image2 {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    background-color: white;
+    position: relative;
+    background-position: center;
+    padding-right: 10px;
+    padding-left:13px;
+}
+.col1-2 
+{
+    width: 50%;
+}
+.col2-2 {
+    padding-left: 30px;
+    width: 50%;
+}
+.vl {
+    border-left: 2px solid #eee;
+}
+.profile-info
+{
+    display:block;
+    padding-bottom:5px;
+}
+.report-profile
+{
+    color:white ;
+    background-color:orangered;
+}
+hr.divide-profile
+{
+    padding:0;
+    border:2px solid #eee;
+}
+.heart-class {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    z-index: 1;
+}
+.heart-button
+{
+    float:right;
 }

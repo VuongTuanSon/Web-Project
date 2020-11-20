@@ -12,6 +12,7 @@ import HomePage from './pages/homePage';
 import SlideShow from './pages/slideShow';
 import Products from './pages/products';
 import DetailedItems from './pages/detailedItems'
+import ProfilePage from './pages/profilePage'
 import './assets/default.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Route exact path='/' component={HomePage} />
               <Route exact path='/Products' component={Products} />
               <Route exact path='/DetailedItems' component={DetailedItems} />
+              <Route exact path='/ProfilePage' component={ProfilePage} />
               <Footer />
     </div>
     </Router>
