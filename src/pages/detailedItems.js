@@ -1,12 +1,18 @@
-﻿
-import {
+﻿import {
     NavLink,
     Link
 } from 'react-router-dom';
-import {Slide} from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
+import { render } from "react-dom";
+import ReactStars from "react-rating-stars-component";
 import avatar1 from './images/avatar1.png'
 import item1 from './images/item1.jpg'
 import heart from './images/heart.png'
+
+const ratingChanged = (newRating) => {
+    console.log(newRating);
+};
+
 function DetailedItems() {
     return (
         <div className="ekvnxp">
@@ -56,9 +62,8 @@ function DetailedItems() {
                     <div className="contact-help">
                         Tin đăng này đã được kiểm duyệt. Nếu có vấn đề gì vui lòng <NavLink className="contact-cskh" to="">liên lạc</NavLink> với bộ phận CSKH.
                     </div>
-                    <div className="center-report">
-                        <button type="button">Báo tin không hợp lệ</button>
-                        <button type="button">Báo tin đã bán</button>
+                    <div>
+                        <input className="input-comment" placeholder="Đưa ra nhận xét tại đây" type="text" />
                     </div>
                 </div>
                 <div className="col2">
@@ -81,6 +86,12 @@ function DetailedItems() {
                     <div className="separator">
                         <span className="contact-help">Lưu ý : KHÔNG NÊN đặt cọc nếu chưa xác định chủ nhà.</span>
                     </div>
+                    <ReactStars
+                        count={5}
+                        onChange={ratingChanged}
+                        size={50}
+                        activeColor="#ffd700"
+                    />,
                 </div>
             </div>
         </div>

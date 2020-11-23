@@ -44,15 +44,15 @@ a{
   background-color: #ddd;
   color: black;
 }
-input
+.input-search
 {
-    width:608px;height:36px;background-color:#ffffff;border-radius:5px;border:none;position:relative;padding:0;margin-left:0px;margin-top:2px;font-size:14px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.33;letter-spacing:normal;outline:none;color:#9b9b9b;text-indent:12px
+    width:608px;height:36px;background-color:#ffffff;border:none;position:relative;padding:0;margin-left:0px;margin-top:2px;font-size:14px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.33;letter-spacing:normal;outline:none;color:#9b9b9b;text-indent:12px
 }
 
 
 .wrap {
     padding-top:10px;
-    max-width: 936px;
+    max-width: 968px;
     text-align: center;
     position: relative;
     margin: auto;
@@ -61,7 +61,7 @@ input
 
 .ekvnxp {
     margin: 0 auto;
-    max-width: 936px;
+    max-width: 968px;
 }
 
 @media (max-width: 540px) {
@@ -147,9 +147,10 @@ input
     height: 200px;
     width: 192px;
     position: relative;
-    padding: 10px; 
+    padding: 12px; 
     overflow: hidden;
     border: 11px solid #fff;
+    margin:2px;
 }
 .img2 {
     background: #f6f7f8;
@@ -450,6 +451,9 @@ ol
 .vl {
     border-left: 2px solid #eee;
 }
+.vl2 {
+    border-left: 2px solid black;
+}
 .profile-info
 {
     display:block;
@@ -474,4 +478,155 @@ hr.divide-profile
 .heart-button
 {
     float:right;
+}
+.input-comment {
+    width: 100%;
+    height: 36px;
+    background-color: #C0C0C0;
+    border: none;
+    position: relative;
+    padding: 0;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    outline: none;
+    text-indent:8px;    
+}
+
+.col1-chat
+{
+    width:33.33%;
+}
+.chat-section
+{
+    width:100%;
+}
+.chat-section2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    position: relative;
+    background-position: center;
+    padding-top:5px;
+    padding-right:10px;
+}
+.chat-name
+{
+    padding-top:10px;
+}
+.col2-chat {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 10px;
+    width: 66.67%;
+}
+.container2 {
+    height: 100%;
+    border-collapse: collapse;
+}
+.input-chat {
+    width: 608px;
+    height: 36px;
+    background-color: black;
+    border: none;
+    position: relative;
+    padding: 0;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    outline: none;
+    color: #9b9b9b;
+    text-indent: 12px
+}
+.form-post {
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+    .form-post form {
+        display: block;
+        padding: 10px;
+    }
+
+        .form-post form select,
+        .form-post form input {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+            .form-post form select:focus,
+            .form-post form input:focus {
+                outline: none;
+            }
+
+form label {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+    form label span {
+        color: red;
+    }
+
+.expand-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .expand-address .number-home {
+        width: 20%;
+    }
+
+    .expand-address .street {
+        width: 79%;
+    }
+
+.form-post .near-location {
+    display: flex;
+    flex-direction: column;
+}
+ .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.camera-icon {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    cursor: pointer;
+}
+.image-input>input
+{
+    display:none;
+}
+.infoRemind {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.input-button
+{
+    padding-bottom:10px;
 }

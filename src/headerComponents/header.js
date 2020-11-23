@@ -8,18 +8,18 @@ function Header() {
     	<header>
                 <div className="topnav">
                       <NavLink className="logo" to="/Footer">LOGO</NavLink>
-                      <NavLink className="items" to="/Footer">Profile</NavLink>
+                      <NavLink className="items" to="/ProfilePage">Profile</NavLink>
                       <NavLink className="items" to="/Footer">Thông báo</NavLink>
-                      <NavLink className="items" to="/Footer">Chat</NavLink>
+                      <NavLink className="items" to="/Chat">Chat</NavLink>
                       <NavLink className="items" to="/Footer">Tôi bán</NavLink>
                       <NavLink className="items" to="/Products">Danh sách</NavLink>
-                      <NavLink className="items" to="/Footer">Trang chủ</NavLink>
+                      <NavLink className="items" to="">Trang chủ</NavLink>
                 </div>
                 <div className="topnav">
-                    <div>
-                        <input placeholder="Tìm kiếm nhà trọ tại đây" type="text"/>
-                        <NavLink to="#" activeClassName="nextToSearch">Đăng nhập</NavLink>
-                        <NavLink to="#" activeClassName="nextToSearch">Đăng tin</NavLink>
+              <div>
+                  <input className="input-search" placeholder="Tìm kiếm nhà trọ tại đây" type="text" />
+                        <NavLink className="nextToSearch" to="/PostAddress" >Đăng nhập</NavLink>
+                        <NavLink className="nextToSearch" to="/PostAddress">Đăng tin</NavLink>
                     </div>
                 </div>
       </header>

@@ -13,6 +13,11 @@ import SlideShow from './pages/slideShow';
 import Products from './pages/products';
 import DetailedItems from './pages/detailedItems'
 import ProfilePage from './pages/profilePage'
+import Chat from './pages/chat'
+import PostAddress from './pages/postAddress'
+import PostImage from './pages/postImage'
+import PostContact from './pages/postContact'
+import PostInfo from './pages/postInfo'
 import './assets/default.css'
 
 function App() {
@@ -25,6 +30,11 @@ function App() {
               <Route exact path='/Products' component={Products} />
               <Route exact path='/DetailedItems' component={DetailedItems} />
               <Route exact path='/ProfilePage' component={ProfilePage} />
+              <Route exact path='/Chat' component={Chat} />
+              <Route exact path='/PostAddress' component={PostAddress} />
+              <Route exact path='/PostImage' component={PostImage} />
+              <Route exact path='/PostContact' component={PostContact} />
+              <Route exact path='/PostInfo' component={PostInfo} />
               <Footer />
     </div>
     </Router>
