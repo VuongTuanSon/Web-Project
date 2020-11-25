@@ -25,7 +25,7 @@ a{
   display: block;
   color: black;
   text-align: center;
-  padding: 10px 25px;
+  padding: 10px 40px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -38,7 +38,6 @@ a{
     padding: 10px 30px;
     text-decoration: none;
     font-size: 17px;
-    margin-right:10px;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -176,12 +175,13 @@ footer {
     margin: 0 auto;
 }
 .footer-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     padding: 12px;
 }
 .footer-item {
-    text-align: left;
+    width:100%;
+    text-align: center;
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -200,8 +200,7 @@ footer {
     padding: 0;
     margin-bottom: 12px;
 }
-.footer-heading
-{
+.footer-heading {
     font-size: 14px;
     font-family: Helvetica, Arial, sans-serif !important;
     margin-top: 0;
@@ -605,7 +604,8 @@ form label {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 .camera-icon {
     width: 120px;
@@ -629,4 +629,40 @@ form label {
 .input-button
 {
     padding-bottom:10px;
+}
+.duration-post .input-duration {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .duration-post .input-duration > * {
+        width: 23%;
+    }
+.footer-icon
+{
+    width:40px;
+    height:40px;
+}
+.col1-noti
+{
+    width:60%;
+}
+.noti-line
+{
+    padding-top:50px;
+    color : red;
+}
+.settings
+{
+    padding-right:5px;
+}
+.noti-line2
+{
+    display:inline;
+    padding-right:5px;
+}
+.noti-approved
+{
+    padding-bottom:10px;
+    padding-top:10px;
 }

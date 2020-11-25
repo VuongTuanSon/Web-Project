@@ -25,6 +25,9 @@ function PostImage() {
                 <p>- Chèn số điện thoại/email/logo vào hình</p>
             </div>
             <div className="btn-container">
+                <Link to="">
+                    <button className="continue-address-btn" type="submit">Quay lại</button>
+                </Link>
                 <Link to="/PostContact">
                     <button className="continue-address-btn" type="submit">Tiếp tục</button>
                 </Link>

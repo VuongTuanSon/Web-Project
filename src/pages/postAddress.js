@@ -122,6 +122,9 @@ function PostAddress() {
                         <label for="utility">Tiện ích khác <span>*</span></label>
                         <input name="utility" type="text" id="square" placeholder="Tện ích khác" required/>
                     <div className="btn-container">
+                        <Link to="">
+                            <button className="continue-address-btn" type="submit">Quay lại</button>
+                        </Link>
                         <Link to="/PostImage">
                             <button className="continue-address-btn" type="submit">Tiếp tục</button>
                         </Link>

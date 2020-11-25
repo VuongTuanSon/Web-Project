@@ -3,6 +3,7 @@
     Link
 } from 'react-router-dom';
 import list1 from './images/list-item1.jpg'
+import { FaCog } from 'react-icons/fa';
 import heart from './images/heart.png'
 function Products() {
   return (
@@ -28,11 +29,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
               <hr/>
@@ -54,11 +56,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
                   <hr/>
@@ -80,11 +83,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
               <hr/>
@@ -106,11 +110,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
               <hr/>
@@ -132,11 +137,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
               <hr/>
@@ -158,11 +164,12 @@ function Products() {
                       </NavLink>
                   </div>
                   <div className="col2">
-                      <span className="heart-button">
-                          <button>
-                              <img src={heart} width="20" />
+                      <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
                           </button>
-                      </span>
+                      </Link>
                   </div>
               </div>
               <hr />

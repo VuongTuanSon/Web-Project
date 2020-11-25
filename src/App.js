@@ -18,6 +18,7 @@ import PostAddress from './pages/postAddress'
 import PostImage from './pages/postImage'
 import PostContact from './pages/postContact'
 import PostInfo from './pages/postInfo'
+import Notification from './pages/notification'
 import './assets/default.css'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               <Route exact path='/PostImage' component={PostImage} />
               <Route exact path='/PostContact' component={PostContact} />
               <Route exact path='/PostInfo' component={PostInfo} />
+              <Route exact path='/Notification' component={Notification}/>
               <Footer />
     </div>
     </Router>
