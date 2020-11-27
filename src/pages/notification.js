@@ -8,6 +8,7 @@ function Notification() {
     return (
         <main className="ekvnxp">
             <div class="separator"></div>
+            <hr/>
             <div className="container">
                 <div className="col1-noti">
                     <NavLink to="/DetailedItems" className="wrap-list">

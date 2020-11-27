@@ -19,6 +19,7 @@ import PostImage from './pages/postImage'
 import PostContact from './pages/postContact'
 import PostInfo from './pages/postInfo'
 import Notification from './pages/notification'
+import LikedPosts from './pages/likedPosts'
 import './assets/default.css'
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route exact path='/PostContact' component={PostContact} />
               <Route exact path='/PostInfo' component={PostInfo} />
               <Route exact path='/Notification' component={Notification}/>
+              <Route exact path='/LikedPosts' component={LikedPosts}/>
               <Footer />
     </div>
     </Router>

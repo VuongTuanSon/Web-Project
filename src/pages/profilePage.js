@@ -4,7 +4,8 @@
 } from 'react-router-dom';
 import avatar1 from './images/avatar1.png'
 import list1 from './images/list-item1.jpg'
-import heart from './images/heart.png'
+
+import { FaCog } from 'react-icons/fa';
 function ProfilePage() {
     return (
         <div className="ekvnxp">
@@ -18,10 +19,11 @@ function ProfilePage() {
                         </div>
                         <span className="seller-name">Vương Tuấn Sơn</span>
                     </NavLink>
-                    <NavLink to="">
-                        <div>Tin bài đã lưu</div>
-                    </NavLink>
-                    <div className="separator"></div>
+                    <Link to="/LikedPosts">
+                        <div className="saved-posts">
+                                Tin bài đã lưu
+                        </div>
+                    </Link>
                 </div>
                 <div className="vl"></div>
                 <div className="col2-2">
@@ -54,9 +56,12 @@ function ProfilePage() {
                     </div>
                     <div className="col2">
                         <span className="heart-button">
-                            <button>
-                                <img src={heart} width="20" />
-                            </button>
+                        <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
+                          </button>
+                      </Link>
                         </span>
                     </div>
                 </div>
@@ -80,9 +85,12 @@ function ProfilePage() {
                     </div>
                     <div className="col2">
                         <span className="heart-button">
-                            <button>
-                                <img src={heart} width="20" />
-                            </button>
+                        <Link to="/PostAddress">
+                          <button type="button" className="heart-button">
+                              <FaCog className="settings" />
+                              <span>Chỉnh sửa</span>
+                          </button>
+                      </Link>
                         </span>
                     </div>
                 </div>

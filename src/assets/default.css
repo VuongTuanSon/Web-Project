@@ -667,3 +667,12 @@ form label {
     padding-bottom:10px;
     padding-top:10px;
 }
+.saved-posts
+{
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    background-color:#ffba00;
+    border: 2px solid #ffba00;
+    padding:5px;
+}
