@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\assets",
+    "\\src\\footerComponents",
     "\\src\\headerComponents",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\postInfo.js",
+  "SelectedNode": "\\src\\pages\\homePage.js",
   "PreviewInSolutionExplorer": false
 }

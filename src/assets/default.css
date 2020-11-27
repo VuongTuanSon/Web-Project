@@ -476,6 +476,7 @@ hr.divide-profile
 }
 .heart-button
 {
+    padding-right:5px;
     float:right;
 }
 .input-comment {

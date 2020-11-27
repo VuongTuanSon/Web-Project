@@ -18,6 +18,9 @@ function ProfilePage() {
                         </div>
                         <span className="seller-name">Vương Tuấn Sơn</span>
                     </NavLink>
+                    <NavLink to="">
+                        <div>Tin bài đã lưu</div>
+                    </NavLink>
                     <div className="separator"></div>
                 </div>
                 <div className="vl"></div>
