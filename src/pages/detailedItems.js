@@ -1,4 +1,5 @@
-﻿import {
+﻿import React , {useState, useEffect} from  'react'
+import {
     NavLink,
     Link
 } from 'react-router-dom';
@@ -12,8 +13,27 @@ import heart from './images/heart.png'
 const ratingChanged = (newRating) => {
     console.log(newRating);
 };
-
+const detailpost = 
+    {
+        name: "Vuong Tuan Son",
+        phone : "09987654321",
+        room: {
+            price: 26000000,
+            place: "Cát Linh, Đống Đa, Hà Nội",
+            description: "Tầng 2 phòng khép kín điện nước an ninh tốt thoáng thuận tiện ngần đường chính",
+            area: 25
+        },
+        image: [
+            "https://cdn.chotot.com/NYQq2QDe1rbf3UQQL-Pmuuduauz4P9Jjo2WDJq6UYRA/preset:view/plain/fb1e6280ea175626ccc099348df31961-2658116256276507554.jpg",
+            "https://cdn.chotot.com/pgJ8Wwtbg99Ct-83cfXFc-VQ8X5u6RAjArmsrQolmLE/preset:view/plain/aff14fd63c3cebc8390e20d0d362c26a-2658116256357894289.jpg",
+            "https://cdn.chotot.com/BwSHMZzMYcHaZNOpdZt2SrgZ-LNhMDBYJ4gvDCLygeA/preset:view/plain/86563e3610845269eb42055df96e4ccf-2658116257525930714.jpg",
+            "https://cdn.chotot.com/pgJ8Wwtbg99Ct-83cfXFc-VQ8X5u6RAjArmsrQolmLE/preset:view/plain/aff14fd63c3cebc8390e20d0d362c26a-2658116256357894289.jpg",
+        ]
+    }
+    
 function DetailedItems() {
+    // const [detailPost, setDetailPost] = useState(null)
+    // setDetailPost()
     return (
         <div className="ekvnxp">
             <div className="accessRow">
@@ -29,18 +49,14 @@ function DetailedItems() {
             <div className="container">
                 <div className="col1">
                     <Slide>
-                        <div className="item-img">
-                            <img src={item1} width="400" height="500"/>
-                        </div>
-                        <div className="item-img">
-                            <img src={item1} width="400" height="500" />
-                        </div>
-                        <div className="item-img">
-                            <img src={item1} width="400" height="500" />
-                        </div>
-                        <div className="item-img">
-                            <img src={item1} width="400" height="500" />
-                        </div>
+                        
+                        {
+                            detailpost.image.map(x=> (
+                                <div className="item-img">
+                                    <img src={x} width="400" height="500"/>
+                                </div>
+                            ))
+                        }
                     </Slide>
                     <div>
                         <div className="separator2">
@@ -71,7 +87,7 @@ function DetailedItems() {
                         <div className="avatar-image">
                             <img className="ava-pic" src={avatar1} width="50" height="50" />
                         </div>
-                        <span className="seller-name">Vương Tuấn Sơn</span>
+                    <span className="seller-name">{detailpost.name}</span>
                     </NavLink>
                     <div className="separator">
                         <div className="call-box">
