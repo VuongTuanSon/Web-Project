@@ -6,6 +6,7 @@ import avatar1 from './images/avatar1.png'
 import list1 from './images/list-item1.jpg'
 
 import { FaCog } from 'react-icons/fa';
+import NotificationPosts from '../component/notificationPosts';
 function ProfilePage() {
     return (
         <div className="ekvnxp">
@@ -37,63 +38,7 @@ function ProfilePage() {
             <div className="">
                 <h1 className="eBxpbB">Đang cho thuê</h1>
                 <hr />
-                <div className="container">
-                    <div className="col1">
-                        <NavLink to="/DetailedItems" className="wrap-list">
-                            <img src={list1} className="wrap-list-img" />
-                            <div className="wrap-list-body">
-                                <div className="wrap-list-content">Nhà cho thuê giá rẻ</div>
-                                <div className="wrap-list-content-lowerhalf">
-                                    <span className="wrap-list-price">2.6 triệu</span>
-                                    <div className="adListingInfo">
-                                        <span className="adItems">User</span>
-                                        <span className="adItems">X minutes ago</span>
-                                        <span>Y district</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </NavLink>
-                    </div>
-                    <div className="col2">
-                        <span className="heart-button">
-                        <Link to="/PostAddress">
-                          <button type="button" className="heart-button">
-                              <FaCog className="settings" />
-                              <span>Chỉnh sửa</span>
-                          </button>
-                      </Link>
-                        </span>
-                    </div>
-                </div>
-                <hr />
-                <div className="container">
-                    <div className="col1">
-                        <NavLink to="/DetailedItems" className="wrap-list">
-                            <img src={list1} className="wrap-list-img" />
-                            <div className="wrap-list-body">
-                                <div className="wrap-list-content">Nhà cho thuê giá rẻ</div>
-                                <div className="wrap-list-content-lowerhalf">
-                                    <span className="wrap-list-price">2.6 triệu</span>
-                                    <div className="adListingInfo">
-                                        <span className="adItems">User</span>
-                                        <span className="adItems">X minutes ago</span>
-                                        <span>Y district</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </NavLink>
-                    </div>
-                    <div className="col2">
-                        <span className="heart-button">
-                        <Link to="/PostAddress">
-                          <button type="button" className="heart-button">
-                              <FaCog className="settings" />
-                              <span>Chỉnh sửa</span>
-                          </button>
-                      </Link>
-                        </span>
-                    </div>
-                </div>
+                <NotificationPosts/>
             </div>
         </div>
     );

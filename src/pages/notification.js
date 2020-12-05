@@ -3,33 +3,14 @@ import {
     NavLink,
     Link
 } from 'react-router-dom';
-import list1 from './images/list-item1.jpg'
+import NotificationPosts from '../component/notificationPosts';
+const image = "https://cdn.chotot.com/RVBPMsdcNkMnqbqrbro4rGphDZp4JN4YQ0yiKuQqVmg/preset:listing/plain/a946be00d83819856214dea96b24c256-2695935237503285377.jpg"
 function Notification() {
     return (
         <main className="ekvnxp">
             <div class="separator"></div>
             <hr/>
-            <div className="container">
-                <div className="col1-noti">
-                    <NavLink to="/DetailedItems" className="wrap-list">
-                        <img src={list1} className="wrap-list-img" />
-                        <div className="wrap-list-body">
-                            <div className="wrap-list-content">Nhà cho thuê giá rẻ</div>
-                            <div className="wrap-list-content-lowerhalf">
-                                <span className="wrap-list-price">2.6 triệu</span>
-                                <div className="adListingInfo">
-                                    <span className="adItems">User</span>
-                                    <span className="adItems">X minutes ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </NavLink>
-                </div>
-                <div className="">
-                    <h2 className="noti-line">Tin của bạn đã được duyệt!</h2>
-                    <span>Bấm vào <NavLink className="contact-cskh" to="/Products">đây</NavLink> để truy cập danh sách nhà cho thuê của bạn.</span>
-                </div>
-            </div>
+            <NotificationPosts image={image}/>
             <hr/>
             <div className="noti-approved">
                     <h2 className="noti-line2">Tài khoản của bạn đã được duyệt!</h2>

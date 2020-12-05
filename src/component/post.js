@@ -3,9 +3,6 @@ import {
     NavLink,
     Link
 } from 'react-router-dom';
-// import list1 from './images/list-item1.jpg'
-
-// import { Component } from 'react';
 const imagesPath = {
     heart: "https://static.chotot.com/storage/icons/saveAd/save-ad.svg",
     heart2: "https://static.chotot.com/storage/icons/saveAd/save-ad-active.svg"
