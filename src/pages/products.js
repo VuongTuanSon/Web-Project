@@ -3,7 +3,14 @@
     Link
 } from 'react-router-dom';
 
-
+const detailpost = 
+{
+    description:"Nhà cho thuê giá rẻ" ,
+    name: "Vuong Tuan Son",
+    price: 2.6,
+    minutes: 20,
+    district:"Đống Đa"
+}
 import ProductsRent from '../component/productsRent';
 function Products() {
   return (

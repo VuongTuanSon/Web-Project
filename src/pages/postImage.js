@@ -14,7 +14,7 @@ function PostImage() {
                         <FaCamera className="camera-icon" />
                     </div>
                 </label>
-                <input className="input-button" id="file-input" type="file" />
+                <input className="input-button" id="file-input" type="file" required min="3"/>
                 
                 </div>
             <div className="infoRemind">

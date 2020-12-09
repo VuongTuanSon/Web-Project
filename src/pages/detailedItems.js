@@ -7,7 +7,6 @@ import { Slide } from 'react-slideshow-image';
 import { render } from "react-dom";
 import ReactStars from "react-rating-stars-component";
 import avatar1 from './images/avatar1.png'
-import item1 from './images/item1.jpg'
 import heart from './images/heart.png'
 
 const ratingChanged = (newRating) => {
@@ -67,11 +66,11 @@ function DetailedItems() {
                                 </button>
                             </span>
                         </div>
-                        <span className="detailed-price">2.6 triệu</span>
-                        <div className="item-location">Cát Linh, Đống Đa, Hà Nội</div>
-                        <div className="item-description">Tầng 2 phòng khép kín điện nước an ninh tốt thoáng thuận tiện ngần đường chính</div>
-                        <div className="item-area">Diện tích : 15m2</div>
-                        <div className="phoneSeller">Số điện thoại người bán : xxxxxxxxxxx</div>
+                        <span className="detailed-price">{detailpost.room.price}</span>
+                        <div className="item-location">{detailpost.room.place}</div>
+                        <div className="item-description">{detailpost.room.description}</div>
+                        <div className="item-area">Diện tích : {detailpost.room.area}</div>
+                        <div className="phoneSeller">Số điện thoại người bán : {detailpost.phone}</div>
                         <div><NavLink to="" className="chat-item">Hỏi người cho thuê qua chat</NavLink></div>
                     </div>
                     <hr/>
@@ -91,7 +90,7 @@ function DetailedItems() {
                     </NavLink>
                     <div className="separator">
                         <div className="call-box">
-                            Điện thoại liên lạc : 0972759616
+                            Điện thoại liên lạc : {detailpost.phone}
                         </div>
                     </div>
                     <div className="separator">

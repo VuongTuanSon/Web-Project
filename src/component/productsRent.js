@@ -4,11 +4,19 @@ import {
     Link
 } from 'react-router-dom';
 import { FaCog } from 'react-icons/fa';
+import DetailedItems from '../pages/detailedItems';
 const imagesPath = {
     heart: "https://static.chotot.com/storage/icons/saveAd/save-ad.svg",
     heart2: "https://static.chotot.com/storage/icons/saveAd/save-ad-active.svg"
   }
-
+  const detailpost = 
+  {
+      description:"Nhà cho thuê giá rẻ" ,
+      name: "Vuong Tuan Son",
+      price: 2.6,
+      minutes: 20,
+      district:"Đống Đa"
+  }
 class ProductsRent extends React.Component{
     constructor(props) {
         super(props)
@@ -35,13 +43,13 @@ class ProductsRent extends React.Component{
                       <NavLink to="/DetailedItems" className="wrap-list">
                           <img src={this.state.image} className="wrap-list-img" />
                           <div className="wrap-list-body">
-                              <div className="wrap-list-content">Nhà cho thuê giá rẻ</div>
+                              <div className="wrap-list-content">{detailpost.description}</div>
                               <div className="wrap-list-content-lowerhalf">
-                                  <span className="wrap-list-price">2.6 triệu</span>
+                                  <span className="wrap-list-price">{detailpost.price} triệu</span>
                                   <div className="adListingInfo">
-                                      <span className="adItems">User</span>
-                                      <span className="adItems">X minutes ago</span>
-                                      <span>Y district</span>
+                                      <span className="adItems">{detailpost.name}</span>
+                                      <span className="adItems">{detailpost.minutes} minutes ago</span>
+                                      <span>{detailpost.district} district</span>
                                   </div>
                               </div>
                           </div>
