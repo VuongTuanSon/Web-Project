@@ -8,24 +8,24 @@ function PostAddress() {
             <section className="form-post">
                 <form action="">
                     <label for="location">Chọn tỉnh thành <span>*</span></label>
-                    <input type="text" name="location" placeholder="Chọn tỉnh thành"/>
+                    <input type="text" name="location" placeholder="Chọn tỉnh thành" required/>
                     <label for="location">Chọn quận/huyện <span>*</span></label>
-                    <input type="text" name="location" placeholder="Chọn quận/huyện"/>
+                    <input type="text" name="location" placeholder="Chọn quận/huyện" required/>
                     <label for="location">Chọn xã/phường/thị trấn <span>*</span></label>
-                    <input type="text" name="location" placeholder="Chọn xã, phường, thị trấn"/>
+                    <input type="text" name="location" placeholder="Chọn xã, phường, thị trấn" required/>
                     <div className="expand-address">
                         <div className="number-home">
                             <label for="numberhome">Số nhà</label>
-                            <input type="text" name="numberhome" placeholder="Số nhà"/>
+                            <input type="text" name="numberhome" placeholder="Số nhà" />
                         </div>
                         <div className="street">
                             <label for="street">Đường/thôn</label>
-                            <input type="text" name="street" placeholder="Đường, thôn"/>
+                            <input type="text" name="street" placeholder="Đường, thôn" />
                         </div>
                     </div>
                     <div className="near-location">
                          <label for="location">Gần các địa điểm <span>*</span></label>
-                          <input type="text" name="location" placeholder="Địa điểm 1" />
+                          <input type="text" name="location" placeholder="Địa điểm 1" required/>
                           <input type="text" name="location" placeholder="Địa điểm 2" />
                     </div>
                     <div className="container">
