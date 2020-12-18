@@ -1,10 +1,19 @@
-﻿import {
+﻿import React from 'react'
+import {
     NavLink,
     Link
 } from 'react-router-dom';
-
-
 import ProductsRent from '../component/productsRent';
+
+const detailpost = 
+{
+    description:"Nhà cho thuê giá rẻ" ,
+    name: "Vuong Tuan Son",
+    price: 2.6,
+    minutes: 20,
+    district:"Đống Đa"
+}
+
 function Products() {
   return (
       <div className="ekvnxp">
