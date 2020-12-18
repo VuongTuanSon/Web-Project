@@ -687,3 +687,22 @@ form label {
     border: 2px solid #ffba00;
     padding:5px;
 }
+.container-fluid
+{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+.wrap-list2
+{
+    display: block;
+}
+.wrap-list-img2
+{   
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width : 200px;
+    height: 200px;
+}
+.wrap-list-content2 {
+    font-family: Verdana,Arial,sans-serif;
+}

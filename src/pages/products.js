@@ -3,6 +3,7 @@ import {
     NavLink,
     Link
 } from 'react-router-dom';
+
 import ProductsRent from '../component/productsRent';
 const detailpost = 
 {

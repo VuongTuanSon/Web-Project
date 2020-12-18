@@ -15,7 +15,6 @@ function Header() {
                 </div>
                 <div className="topnav">
                   <input className="input-search" placeholder="Tìm kiếm nhà trọ tại đây" type="text" />
-                        <NavLink className="nextToSearch" to="" >Đăng nhập</NavLink>
                         <NavLink className="nextToSearch" to="/PostAddress">Đăng tin</NavLink>
                     </div>
       </header>
