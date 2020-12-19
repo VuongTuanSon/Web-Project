@@ -9,7 +9,6 @@ import {
 import Header from './headerComponents/header';
 import Footer from './footerComponents/footer';
 import HomePage from './pages/homePage';
-import SlideShow from './pages/slideShow';
 import Products from './pages/products';
 import DetailedItems from './pages/detailedItems'
 import ProfilePage from './pages/profilePage'
@@ -36,28 +35,30 @@ function App() {
   return (
     <Router>
       <div className="App">
-                <Route exact path='/' component={SlideShow} />
-                <Route exact path='/' component={HomePage} />
-                <Route exact path='/Products' component={Products} />
-                <Route exact path='/DetailedItems' component={DetailedItems} />
-                <Route exact path='/ProfilePage' component={ProfilePage} />
-                <Route exact path='/Chat' component={Chat} />
-                <Route exact path='/PostAddress' component={PostAddress} />
-                <Route exact path='/PostImage' component={PostImage} />
-                <Route exact path='/PostContact' component={PostContact} />
-                <Route exact path='/PostInfo' component={PostInfo} />
-                <Route exact path='/Notification' component={Notification}/>
-                <Route exact path='/LikedPosts' component={LikedPosts}/>
-                <Switch>
-                    <PrivateRoute exact path="/" component={Home} />
-                    <PublicRoute path="/login" component={Login} />
-                    <PublicRoute path="/register" component={Register} />
-                    <PublicRoute path="/forgotpass" component={ForgotPassword} />
-                    <PublicRoute path="/renter" component={RegisterRenterScreen} />
-                    <PublicRoute path="/owner" component={RegisterOwnerScreen} />
-                    <Route component={NotFoundScreen} />
-                </Switch>
-                <Footer />
+        {/* <Header /> */}
+          <Switch>
+              {/* <Route exact path='/' component={SlideShow} /> */}
+              <Route exact path='/' component={HomePage} />
+              <Route exact path='/Products' component={Products} />
+              <Route exact path='/DetailedItems' component={DetailedItems} />
+              <Route exact path='/ProfilePage' component={ProfilePage} />
+              <Route exact path='/Chat' component={Chat} />
+              <Route exact path='/PostAddress' component={PostAddress} />
+              <Route exact path='/PostImage' component={PostImage} />
+              <Route exact path='/PostContact' component={PostContact} />
+              <Route exact path='/PostInfo' component={PostInfo} />
+              <Route exact path='/Notification' component={Notification}/>
+              <Route exact path='/LikedPosts' component={LikedPosts}/>
+          
+              {/* <PublicRoute exact path="/" component={Home} /> */}
+              <PublicRoute path="/login" component={Login} />
+              <PublicRoute path="/register" component={Register} />
+              <PublicRoute path="/forgotpass" component={ForgotPassword} />
+              <PublicRoute path="/renter" component={RegisterRenterScreen} />
+              <PublicRoute path="/owner" component={RegisterOwnerScreen} />
+              <Route component={NotFoundScreen} />
+          </Switch>
+          {/* <Footer /> */}
       </div>
     </Router>
   );

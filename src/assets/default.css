@@ -147,9 +147,9 @@ a{
     font-style: normal;
 }
 
-    .jaZGFx b {
-        font-size: 14px;
-    }
+.jaZGFx b {
+    font-size: 14px;
+}
 .img1 {
     background: #f6f7f8;
     background: linear-gradient(to right,#eeeeee 8%,#dddddd 18%,#eeeeee 33%);
@@ -263,9 +263,10 @@ footer {
     padding-right:20px;
 }
 .productLists {
-    position : relative;
+    /* position : relative;
     overflow: hidden;
-    left:350px;
+    left:350px; */
+    height: 60px;
 }
 .listItems {
     float: left;
@@ -276,8 +277,13 @@ footer {
     text-decoration: none;
 }
 .accessRow {
-    overflow: auto;
+    /* overflow: auto; */
+    width: 1200px;
+    margin:auto;
+    padding: auto;
+    display: block;
 }
+
 .accessRowItemsRight {
     float: right;
     outline: none;
@@ -292,7 +298,7 @@ footer {
 }
 ol
 {
-    padding-left:0px;
+    padding-left:10px;
 }
 .divider::before
 { 
@@ -301,12 +307,13 @@ ol
 .clearList li {
     display: inline-block;
     list-style-type: none;
-    padding-right:5px;
+    padding-left:5px;
+    margin-left: 15px;
 }
-.container
+/* .container
 {
     display:flex;
-}
+} */
 .col1
 {
     width:66.67%;

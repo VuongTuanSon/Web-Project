@@ -1,12 +1,13 @@
-﻿import {
+﻿import React from 'react'
+import {
     NavLink,
     Link
 } from 'react-router-dom';
 import avatar1 from './images/avatar1.png'
 import list1 from './images/list-item1.jpg'
-
 import { FaCog } from 'react-icons/fa';
 import NotificationPosts from '../component/notificationPosts';
+
 function ProfilePage() {
     return (
         <div className="ekvnxp">
@@ -16,7 +17,7 @@ function ProfilePage() {
                 <div className="col1-2">
                     <NavLink to="" className="">
                         <div className="avatar-image2">
-                            <img className="ava-pic" src={avatar1} width="50" height="50" />
+                            <img className="ava-pic" src={avatar1} width="50" height="50" alt="icon"/>
                         </div>
                         <span className="seller-name">Vương Tuấn Sơn</span>
                     </NavLink>

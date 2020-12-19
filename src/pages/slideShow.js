@@ -1,24 +1,36 @@
-import { Slide } from 'react-slideshow-image';
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import slide1 from './images/image1.jpg'
-import slide2 from './images/image2.jpg'
-import slide3 from './images/image3.jpg'
-function slideShow() {
-    return (
-        <div className="wrap">
-            <Slide>
-                <div className="each-slide">
-                    <img src={slide1} />
-                </div>
-                <div className="each-slide">
-                    <img src={slide2} />
-                </div>
-                <div className="each-slide">
-                    <img src={slide3} />
-                </div>
-            </Slide>
-        </div>
-    );
+
+const fadeImages = [
+  'images/image1.jpg',
+  'images/image2.jpg',
+  'images/image3.jpg',
+  'images/image1.jpg',
+  'images/image2.jpg',
+  'images/image3.jpg'
+];
+const properties = {
+    duration: 2000,
+    transitionDuration: 1000
 }
 
-export default slideShow;
+const SlideShow = ({images , styles}) => {
+    console.log(images)
+    const listimage = images || fadeImages
+    return (
+        <div className="wrap">
+        <Fade {...properties}>
+            {listimage.map(img => (
+                <div className="each-slide">
+                    <div className="image-container">
+                        <img src={img} alt={img} style={styles}/>
+                    </div>
+                </div>
+            ))}
+            
+        </Fade>
+        </div>
+    )
+}
+export default SlideShow

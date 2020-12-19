@@ -2,14 +2,17 @@
     NavLink,
     Link
 } from 'react-router-dom';
-import 'react-slideshow-image/dist/styles.css'
+// import 'react-slideshow-image/dist/styles.css'
 import { FaFacebookSquare, FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter} from 'react-icons/fa';
 function Footer() {
     return (
-        <footer className="wrap">
-            <div className="footer-container">
+        <footer >
+            <div className="container">
+
+            
+            <div className="footer-container wrap">
                 <div className="footer-item">
                     <p className="footer-heading">Hỗ trợ khách hàng</p>
                     <ul className="footer-ul">
@@ -37,6 +40,7 @@ function Footer() {
                         <li className="footer-li"><Link to=""><FaTwitter className="footer-icon"/></Link></li>
                     </ul>
                 </div>
+            </div>
             </div>
         </footer>
     );
