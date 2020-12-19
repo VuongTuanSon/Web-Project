@@ -3,8 +3,8 @@ import {
     NavLink,
     Link
 } from 'react-router-dom';
-
 import ProductsRent from '../component/productsRent';
+
 const detailpost = 
 {
     description:"Nhà cho thuê giá rẻ" ,
